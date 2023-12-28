@@ -1,8 +1,11 @@
 body
 {
-    background: #333333;
+    background: #EAE0D5;
     margin:0;
+    text-align: center;
+    color: #111;
 }
+
 .tiles
 {
     margin:48px auto;
@@ -14,7 +17,7 @@ body
 .tile
 {
     height:100px;
-    background: #111111;
-    border:5px solid #444444;
+    background: #C6AC8F;
+    border:5px solid #5E503F;
     cursor: pointer;
 }
