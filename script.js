@@ -7,7 +7,7 @@ const tileCount = colorPick.length;
 let revealedCount = 0;
 let activeTile = null;
 let EndMove = false;
-
+let turns=0;
 
 function buildTiles(col) {
     const element = document.createElement("div");
@@ -43,14 +43,13 @@ function buildTiles(col) {
             revealedCount += 2;
 
             if (revealedCount === tileCount) {
-                alert("You Win!!!");
+                alert("You Took "+turns+" Turns!!");
             }
             return;
         }
-
         EndMove = true;
         setTimeout(() => {
-
+            turns++;
             element.style.backgroundColor = null;
             activeTile.style.backgroundColor = null;
 
@@ -74,6 +73,3 @@ for (let i = 0; i < tileCount; i++) {
 
     tilesContainer.appendChild(tile);
 }
-
-
-
